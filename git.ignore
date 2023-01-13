@@ -1,0 +1,8 @@
+#Ignore password file
+password.txt
+secrets.md
+keys
+
+#Do include hello.txt
+!hello.txt
+
