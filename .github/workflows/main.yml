@@ -20,8 +20,8 @@ jobs:
     - run: ls
     - uses: actions/checkout@v3
     - run: ls
-    - run: chmod +x Script1.sh
-    - run: ./Script1.sh
+    - run: chmod +x script1.sh
+    - run: ./script1.sh
     - run: echo $GLOBAL_VAR
     - run: echo $COLOUR
     - run: echo $PASSWORD
