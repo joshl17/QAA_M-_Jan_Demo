@@ -20,10 +20,11 @@ jobs:
     - run: ls
     - uses: actions/checkout@v3
     - run: ls
-    - run: GLOBALVAR
-    - run: Name
+    - run: echo $GLOBALVAR
+    - run: echo $Name
+    - run: echo $PASSWORD
     - run: chmod +x script1.sh
     - run: ./script1.sh 
     - run: chmod +x script2.sh
     - run: ./script2.sh
-    - run: PASSWORD
+   
