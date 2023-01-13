@@ -2,11 +2,17 @@ name: GitHub Workflow Demo
 # Whenever a push is detected on this repo 
 on: [push]
 
+env:
+GLOBAL_VAR: Hello, welcome!
+PASSWORD: {{secrets.secretpw}
+
 # What do we want our workflow to do
 jobs:
   # Name of job 
   actions_demo:
     # What type of virtual machine do we want it to run on 
+    env:
+    Name: Josh
     runs-on: ubuntu-latest
     steps: 
     - run: echo "Hello World"
@@ -14,6 +20,8 @@ jobs:
     - run: ls
     - uses: actions/checkout@v3
     - run: ls
+    - run: GLOBALVAR
+    - run: Name
     - run: chmod +x script1.sh
     - run: ./script1.sh 
     - run: chmod +x script2.sh
