@@ -25,7 +25,7 @@ jobs:
     - run: ./script1.sh 
     - run: chmod +x script2.sh
     - run: ./script2.sh
-    - run: echo $GLOBALVAR
+    - run: echo $GLOBAL_VAR
     - run: echo $Name
     - run: echo $PASSWORD
    
