@@ -2,9 +2,10 @@ name: GitHub Workflow Demo
 # Whenever a push is detected on this repo 
 on: [push]
 
-env:
-  GLOBAL_VAR: Hello, welcome!
-  PASSWORD: {{ secrets.SECRETPW }}
+# In file global variables
+env: 
+  GLOBAL_VAR: Hello, Welcome!
+  PASSWORD: ${{ secrets.SECRETPW }}
 
 # What do we want our workflow to do
 jobs:
@@ -12,20 +13,25 @@ jobs:
   actions_demo:
     # What type of virtual machine do we want it to run on 
     runs-on: ubuntu-latest
-  env:
-    COLOUR: Gold
-    
+    env: 
+      COLOUR: Gold
     steps: 
     - run: echo "Hello World"
-    - run: touch newfile.txt 
     - run: ls
     - uses: actions/checkout@v3
     - run: ls
-    - run: chmod +x script1.sh
-    - run: ./script1.sh 
-    - run: chmod +x script2.sh
-    - run: ./script2.sh
+    - run: chmod +x Script1.sh
+    - run: ./Script1.sh
     - run: echo $GLOBAL_VAR
     - run: echo $COLOUR
     - run: echo $PASSWORD
-   
+  
+  second_job: 
+    runs-on: ubuntu-latest
+    steps: 
+    - run: echo "Is this working"
+    - uses: actions/checkout@v3
+    - run: ls
+    - run: chmod +x script2.sh
+    - run: ./script2.sh
+    - run: echo $COLOUR
