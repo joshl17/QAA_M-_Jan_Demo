@@ -1,15 +1,14 @@
-#Name of workflow
-name: Github Workflow Demo
+name: GitHub Workflow Demo
 
-#Whenever push is detected on this repo, it will run this process
 on: [push]
 
-#What do we want our workflow to do: 
+# What do we want our workflow to do
 jobs:
-#Name of Job
+  
   actions_demo:
-  #What type of VM do we want to run it on
-  runs-on: ubuntu-latest
-  steps:
-  -run: echo "Hello World"
-  -run: ls
+    # What type of virtual machine do we want it to run on 
+    runs-on: ubuntu-latest
+    steps: 
+    - run: echo "Hello GitHub"
+    - run: touch test.txt
+    - run: ls
