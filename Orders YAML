@@ -1,27 +1,27 @@
-Order 1:
- - Price of drink: 2.79
+Order_1:
+ - Price_of_drink: 2.79
    Size: M
    Type: Strawberry Milkshake
-   Dairy Free: false
+   Dairy_Free: false
    Extras: [ "Whipped cream", "Sprinkles"]
-   Name of customer: Josh
-   Food Orders: ["6 pc nugget meal", "double cheeseburger"] 
+   Name_of_customer: Josh
+   Food_Orders: ["6 pc nugget meal", "double cheeseburger"] 
 
-Order 2:
- - Price of drink: 1
+Order_2:
+ - Price_of_drink: 1
    Size: Bottled
    Type: Water
-   Dairy Free: true
+   Dairy_Free: true
    Extras: [ "ice", "SmartWater"]
-   Name of customer: John
-   Food Orders: ["Full English", "Fries"] 
+   Name_of_customer: John
+   Food_Orders: ["Full English", "Fries"] 
 
 
-Order 3:
- - Price of drink: 1.89
+Order_3:
+ - Price_of_drink: 1.89
    Size: L
    Type: Coke
-   Dairy Free: true
+   Dairy_Free: true
    Extras: [ "No Ice", "Lemon"]
-   Name of customer: Kate
-   Food Orders: ["Steak", "Mash Potatoes"] 
+   Name_of_customer: Kate
+   Food_Orders: ["Steak", "Mash Potatoes"] 
