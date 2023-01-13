@@ -1,0 +1,27 @@
+Order 1:
+ - Price of drink: 2.79
+   Size: M
+   Type: Strawberry Milkshake
+   Dairy Free: false
+   Extras: [ "Whipped cream", "Sprinkles"]
+   Name of customer: Josh
+   Food Orders: ["6 pc nugget meal", "double cheeseburger"] 
+
+Order 2:
+ - Price of drink: 1
+   Size: Bottled
+   Type: Water
+   Dairy Free: true
+   Extras: [ "ice", "SmartWater"]
+   Name of customer: John
+   Food Orders: ["Full English", "Fries"] 
+
+
+Order 3:
+ - Price of drink: 1.89
+   Size: L
+   Type: Coke
+   Dairy Free: true
+   Extras: [ "No Ice", "Lemon"]
+   Name of customer: Kate
+   Food Orders: ["Steak", "Mash Potatoes"] 
