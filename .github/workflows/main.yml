@@ -12,3 +12,7 @@ jobs:
     - run: echo "Hello GitHub"
     - run: touch test.txt
     - run: ls
+    -uses: actions/checkout@v3
+    -run: ls
+    -run chmod+x
+    run: ./script1.sh 
