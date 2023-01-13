@@ -14,5 +14,5 @@ jobs:
     - run: ls
     -uses: actions/checkout@v3
     -run: ls
-    -run chmod+x
+    -run chmod+x script1.sh
     run: ./script1.sh 
