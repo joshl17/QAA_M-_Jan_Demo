@@ -4,27 +4,28 @@ on: [push]
 
 env:
 GLOBAL_VAR: Hello, welcome!
-PASSWORD: {{secrets.secretpw}
+PASSWORD: {{secrets.secretpw}}
 
 # What do we want our workflow to do
 jobs:
   # Name of job 
   actions_demo:
     # What type of virtual machine do we want it to run on 
+    runs-on: ubuntu-latest
     env:
     Name: Josh
-    runs-on: ubuntu-latest
+    
     steps: 
     - run: echo "Hello World"
     - run: touch newfile.txt 
     - run: ls
     - uses: actions/checkout@v3
     - run: ls
-    - run: echo $GLOBALVAR
-    - run: echo $Name
-    - run: echo $PASSWORD
     - run: chmod +x script1.sh
     - run: ./script1.sh 
     - run: chmod +x script2.sh
     - run: ./script2.sh
+    - run: echo $GLOBALVAR
+    - run: echo $Name
+    - run: echo $PASSWORD
    
