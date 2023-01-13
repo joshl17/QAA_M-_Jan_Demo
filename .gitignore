@@ -1,0 +1,5 @@
+#Do include hello.txt
+!hello.txt
+
+#Dont include password.txt keys secrets.md
+password.txt keys.txt secrets.md
